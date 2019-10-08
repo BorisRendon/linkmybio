@@ -13,7 +13,7 @@ with open("links.yaml", 'r',encoding='utf-8') as stream:
         print(exc)
 
 
-@app.route('/prueba')
+@app.route('/')
 def inf():
         return render_template("index.html" , data=data)
 

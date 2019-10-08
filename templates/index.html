@@ -14,10 +14,11 @@ http://www.tooplate.com/view/2091-ziggy    {{ url_for('static', filename='') }}
 
 -->
         <title>Link my bio project</title>
+        <p><</p>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=0.5">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}"> 
@@ -35,9 +36,17 @@ http://www.tooplate.com/view/2091-ziggy    {{ url_for('static', filename='') }}
             <div class="row">
               <div class="col-md-12">
                 <div class="text-content">
+                  <center>
                   <h2>Link tree page</h2>
+                
                   <div class="line-dec"></div>
                   <span>Boris Rendon</span>
+                </center>
+                <center>
+                  <img src="static/boris.jpg" alt="">
+                  <p>{{data.socialmedia.shortbio}}</p>
+                </center>
+                  
                 </div>
               </div>
             </div>
@@ -45,6 +54,7 @@ http://www.tooplate.com/view/2091-ziggy    {{ url_for('static', filename='') }}
         </section>
 
         <section class="second-section">
+            
           <div class="container">
             <div class="row">
               <div class="col-md-3 col-sm-6">
@@ -53,7 +63,8 @@ http://www.tooplate.com/view/2091-ziggy    {{ url_for('static', filename='') }}
                     <img src="img/first-icon.png" alt="">
                   </div>
                   <a href={{data.socialmedia.facebook}}>Facebook</a>
-                  <img src="img/facebook.png">
+                  <i></i>
+                 
                   <p>Link a mi perfil de facebook</p>
                 </div>
               </div>
@@ -91,7 +102,7 @@ http://www.tooplate.com/view/2091-ziggy    {{ url_for('static', filename='') }}
                   <div class="icon">
                     <img src="img/fourth-icon.png" alt="">
                   </div>
-                  <a href={{data.socialmedia.linkedin}}>Linkedin</a>
+                  <a href="{{data.socialmedia.linkedin}}">Linkedin</a>
 
                   <p>Link a mi Linkedin.</p>
                 </div>
@@ -112,7 +123,7 @@ http://www.tooplate.com/view/2091-ziggy    {{ url_for('static', filename='') }}
                   <div class="icon">
                     <img src="img/fourth-icon.png" alt="">
                   </div>
-                  <a href={{data.youtube.fortnite}}>Fortnite</a>
+                  <a href={{data.youtube.fornite}}>Fortnite</a>
 
                   <p>Clip de una kill.</p>
                 </div>
@@ -134,12 +145,6 @@ http://www.tooplate.com/view/2091-ziggy    {{ url_for('static', filename='') }}
                       </div>
                       <a href={{data.youtube.goles}}>Goles favoritos</a>
     
-                      <p>Los mejores goles.</p>
+                      <p>Goles favoritos.</p>
                   
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
        
